@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Huenei</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div><img src="/Assets/Logo.png" alt="Logo" /></div>
+      <nav>
+        <ul>
+          <a href="#presentando">
+            <li class="epilogue-300">Presentando</li>
+          </a>
+          <a href="#detalles">
+            <li class="middle epilogue-300">Detalles</li>
+          </a>
+          <a href="#resenhas">
+            <li class="epilogue-300">Reseñas</li>
+          </a>
+        </ul>
+        <a class="boton epilogue-400" href="#form">Comprar</a>
+      </nav>
+    </header>
+    <main>
+      <section id="presentando" class="main">
+        <img class="airProX" src="/Assets/image 1.png" alt="auriculares" />
+        <div class="hero">
+          <h4 class="epilogue-300">Presentando</h4>
+          <h2 class="epilogue-500">HueneiProX</h2>
+          <p class="epilogue-300">
+            Los Auriculares HueneiProX combinan diseño elegante con calidad de
+            audio premium. Disfruta de bajos profundos, medios claros y agudos
+            nítidos para una experiencia auditiva sin igual. Perfectos para
+            música, llamadas y juegos, con una comodidad que te permite usarlos
+            durante horas.
+          </p>
+          <a href="#detalles" class="verdetalles epilogue-400">Saber más</a>
+        </div>
+      </section>
+      <div class="title" id="detalles">
+        <h4 class="epilogue-300">Detalles</h4>
+      </div>
+      <section class="detalles">
+        <div class="contenedor">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/3793626/pexels-photo-3793626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="sonido Inmersivo"
+              class="animateImage"
+            />
+            <figcaption>Sonido Inmersivo</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/3779626/pexels-photo-3779626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Comodidad Total"
+              class="animateImage"
+            />
+            <figcaption>Comodidad Total</figcaption>
+          </figure>
+        </div>
+        <div class="contenedor">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/3776148/pexels-photo-3776148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Conectividad Perfecta"
+              class="animateImage"
+            />
+            <figcaption>Conectividad Perfecta</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/3807538/pexels-photo-3807538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Duración de la Batería"
+              class="animateImage"
+            />
+            <figcaption>Duración de la Batería</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section>
+        <span>
+          <div class="banner">
+            <img
+              src="/Assets/banner.png"
+              alt="auris banner"
+              class="bannerimg"
+            />
+          </div>
+        </span>
+      </section>
+      <section id="resenhas" class="resenhas">
+        <img
+          src="https://images.pexels.com/photos/5047375/pexels-photo-5047375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+          class="resenhaimg"
+        />
+        <span>
+          <h4 class="epilogue-300" style="font-style: italic">
+            "Los Auriculares HueneiProX han cambiado por completo mi experiencia
+            auditiva. Nunca había escuchado mi música favorita de esta manera."
+          </h4>
+          <p class="epilogue-300">-Ana S.</p>
+        </span>
+      </section>
+      <section id="form" class="form">
+        <form action="" class="formulario epilogue-400">
+          <h4 class="epilogue-300">
+            Regístrate para recibir actualizaciones exclusivas y ofertas
+            especiales
+          </h4>
+          <br />
+          <div class="campo">
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div class="campo">
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+          <div class="campo">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo Electrónico"
+              required
+            />
+          </div>
+          <button type="submit" class="epilogue-400">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer epilogue-300">
+      © 2024 Auriculares HueneiProX. Todos los derechos reservados.
+    </footer>
+    <div id="modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <p class="epilogue-300">¡Registro exitoso!</p>
+        <img src="https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711433.jpg" alt="check" style="width: 100px;">
+      </div>
+    </div>
+    <script src="Script/index.js"></script>
+  </body>
+</html>
